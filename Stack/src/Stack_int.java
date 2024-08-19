@@ -27,7 +27,7 @@ public class Stack_int {
         System.out.println("inserting "+x);
 
     }
-
+//
     public int pop() {
         if (isStackEmpty()) {
             System.out.println("stack is Empty");
