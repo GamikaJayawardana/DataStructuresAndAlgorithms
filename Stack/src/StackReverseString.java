@@ -7,16 +7,13 @@ public class StackReverseString {
         }
         System.out.println("\nReversed String :");
         for (int i = 0; i < str.length(); i++) {
-            System.out.print(strChar.pop() + " ");
+            charArray [i] = strChar.pop();
         }
-        System.out.println(" \n");
-
-
-        return str;
+        return new String(charArray);
     }
 
     public static void main (String[] args){
-        reverseString("Gamika");
+       System.out.println( reverseString("Gamika"));
 
     }
 
