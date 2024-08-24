@@ -57,7 +57,7 @@ public class ArrayList_int {
         }
         else {
             int element = listEntry[p];
-            for (int i = p; i < (listSize()) ; i++) {
+            for (int i = p; i < (listSize()-1) ; i++) {
                 listEntry[i] = listEntry[i=1];
             }
             position--;
@@ -68,10 +68,10 @@ public class ArrayList_int {
 
     int retriveList(int p) {
         if (isListEmpty()) {
-            System.out.println("Attempt to delete an entry from an empty list");
+            System.out.println("Attempt to retrive an entry from an empty list");
         }
         else if (p < 0 || p > (listSize())) {
-            System.out.println("attempt to delete a position not in the list");
+            System.out.println("attempt to retrive a position not in the list");
         }
         else {
             return listEntry[p];
@@ -81,10 +81,10 @@ public class ArrayList_int {
 
     int replaceList(int p, int x) {
         if (isListEmpty()) {
-            System.out.println("Attempt to delete an entry from an empty list");
+            System.out.println("Attempt to replace an entry from an empty list");
         }
         else if (p < 0 || p > (listSize())) {
-            System.out.println("attempt to delete a position not in the list");
+            System.out.println("attempt to replace a position not in the list");
         }
         else {
             listEntry[p] = x;
