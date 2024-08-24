@@ -10,19 +10,27 @@ public class ArrayList_int {
         listEntry = new int[maxSize];
     }
 
-    boolean isListEmpty (){
+    boolean isListEmpty () {
         return ( position == -1);
     }
 
-    boolean isListFull (){
-        return ( position == maxSize-1 );
+    boolean isListFull () {
+        return ( position == maxSize - 1 );
     }
 
     int listSize() {
-        return (position+1)
+        return (position + 1);
     }
 
-    void insertLast()
+    void insertLast(int x) {
+        if (isListFull()){
+            System.out.println("List is Full");
+        }
+        position++;
+        listEntry[position] = x;
+    }
+
+
 
 
 }
