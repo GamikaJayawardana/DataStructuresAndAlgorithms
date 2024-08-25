@@ -25,7 +25,7 @@ public class SelectionSort {
 
     static void sort() {
         for (int i = 0; i < size; i++) {
-            int minindex =i ;
+            int minindex = i ;
             for (int j = i; j < size; j++) {
                 if(nums[minindex] > nums[j])
                     minindex = j;
