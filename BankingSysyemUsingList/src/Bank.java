@@ -3,16 +3,18 @@ public class Bank {
     String cusName;
     String accType;
     double accBalance;
-    double interest = calculateInterest(accBalance);
-    double totalBalance = calculateTotalBalance(accBalance, interest);
+    double interest;
+//    = calculateInterest(accBalance);
+    double totalBalance;
+//    = calculateTotalBalance(accBalance, interest);
 
     public Bank(int accNumber, String cusName, String accType, double accBalance) {
         this.accNumber = accNumber;
         this.cusName = cusName;
         this.accType = accType;
         this.accBalance = accBalance;
-//        interest = calculateInterest(accBalance);
-//        totalBalance = calculateTotalBalance(accBalance,interest);
+        interest = calculateInterest(accBalance);
+        totalBalance = calculateTotalBalance(accBalance,interest);
     }
 
     private double calculateTotalBalance(double accBalance, double interest) {
