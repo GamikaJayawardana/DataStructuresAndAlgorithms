@@ -44,7 +44,6 @@ public class Calculate {
             Bank bank = new Bank(accountNumber,customerName,accountType,accountBalance);
             list.insertLast(bank);
 
-
         }
 
         list.traverselList();
