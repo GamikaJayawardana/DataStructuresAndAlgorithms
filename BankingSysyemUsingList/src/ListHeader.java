@@ -95,13 +95,13 @@ public class ListHeader {
 
         void traverselList() {
             int i;
+
+            System.out.printf("%-20s %-20s %-20s %20s %20s %20s%n","Acc No","Customer Name","Acc Type","Acc Balance","Interest","Total Balance");
+
             for (i=0; i< position + 1; i++) {
                 // System.out.println(listEntry[i]);
-                System.out.print(listEntry[i] + " , ");
+                System.out.printf("%-20s %-20s %-20s %20s %20s %20s%n",listEntry[i].accNumber,listEntry[i].cusName,listEntry[i].accType,listEntry[i].accBalance,listEntry[i].interest,listEntry[i].totalBalance);
             }
             System.out.println();
         }
-
-
-
 }
