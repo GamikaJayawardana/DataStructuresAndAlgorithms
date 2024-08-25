@@ -17,6 +17,13 @@ public class Bank {
         totalBalance = calculateTotalBalance(accBalance,interest);
     }
 
+    @Override
+    public String toString() {
+        return "Bank{" +
+                "accNumber=" + accNumber + ", cusName='" + cusName + '\'' + ", accType='" + accType + '\'' + ", accBalance=" + accBalance +
+                ", interest=" + interest + ", totalBalance=" + totalBalance + '}';
+    }
+
     private double calculateTotalBalance(double accBalance, double interest) {
         return accBalance + interest;
     }

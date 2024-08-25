@@ -3,5 +3,6 @@ public class Calculate {
 
             Bank bank = new Bank(1001,"Kamal Disanayaka","saving",500000);
             System.out.println(bank.accNumber + " " + bank.cusName + " " + bank.accType + " " + bank.accBalance + " " + bank.interest + " " + bank.totalBalance );
+            System.out.println(bank.toString());
     }
 }
