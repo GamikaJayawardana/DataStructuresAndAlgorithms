@@ -30,15 +30,15 @@ public class Bank {
 
         double interestRate = 0;
         if (accBalance < 250000) {
-            interestRate = 2.5;
+            interestRate = 2.50;
         } else if (accBalance < 500000) {
-            interestRate = 5.0;
+            interestRate = 5.00;
         } else if (accBalance < 750000) {
-            interestRate = 7.5;
+            interestRate = 7.50;
         } else if (accBalance < 1000000) {
-            interestRate = 8.0;
+            interestRate = 8.00;
         } else if (accBalance < 1500000) {
-            interestRate = 9.5;
+            interestRate = 9.50;
         }
         return accBalance * interestRate / 100;
     }

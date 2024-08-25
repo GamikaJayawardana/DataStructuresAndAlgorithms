@@ -9,13 +9,13 @@ public class QuickSort {
 
   public int patition(ListHeader datalist,int start, int end) {
         double pivot = datalist.listEntry[end].accBalance;
-        int i=0;
+        int i = start-1;
         for (int j = start; j < end; j++) {
             if(datalist.listEntry[j].accBalance < pivot){
                 i++;
                 double temp = datalist.listEntry[i].accBalance;
                 datalist.listEntry[i].accBalance = datalist.listEntry[j].accBalance;
-                temp = datalist.listEntry[j].accBalance;
+                datalist.listEntry[j].accBalance = temp;
             }
         }
         double temp = datalist.listEntry[i+1].accBalance;

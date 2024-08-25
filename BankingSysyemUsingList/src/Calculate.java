@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Calculate {
 
-
-
-
+    static ListHeader list;
     public static void main(String[] args) {
 
         loaddata();
-
+        QuickSort sortedlist = new QuickSort();
+        sortedlist.quick(list,0,list.maxSize-1);
+        list.traverselList();
     }
 
     private static void loaddata() {
@@ -17,7 +17,7 @@ public class Calculate {
         System.out.println("Enter the No of Customers: ");
         int no = scan.nextInt();
 
-        ListHeader list = new ListHeader(no);
+        list = new ListHeader(no);
 
         System.out.println("Enter Customer Details");
         System.out.println("__________________________\n");
