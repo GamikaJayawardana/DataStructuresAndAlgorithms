@@ -28,6 +28,7 @@ public class ArrayList_int {
         }
         position++;
         listEntry[position] = x;
+//        System.out.println("Inserting " + x + " at the end of list");
     }
 
     void insertList(int p, int element ) {
@@ -38,12 +39,12 @@ public class ArrayList_int {
             System.out.println("attempt to insert a position not in the list");
         }
         else {
-            for (int i = (listSize()); i < p ; i--) {
-                listEntry[i] = listEntry[i-1];
+            for (int i = (listSize()); i > p ; i--) {
+                listEntry[i] = listEntry[i - 1];
             }
             listEntry[p] = element;
             position++;
-
+//            System.out.println("inserting " + element + " at the P = " + p + " of list");
         }
 
     }
@@ -58,9 +59,10 @@ public class ArrayList_int {
         else {
             int element = listEntry[p];
             for (int i = p; i < (listSize()-1) ; i++) {
-                listEntry[i] = listEntry[i=1];
+                listEntry[i] = listEntry[i+1];
             }
             position--;
+//            System.out.println("deleting at the P = " + p + " of list");
             return element;
         }
         return 0;
@@ -94,12 +96,11 @@ public class ArrayList_int {
 
     void traverselList() {
         int i;
-        for (i=0; i< position+1; i++) {
-            System.out.println(listEntry[i]);
+        for (i=0; i< position + 1; i++) {
+           // System.out.println(listEntry[i]);
+            System.out.print(listEntry[i] + " , ");
         }
+        System.out.println();
     }
-
-
-
 
 }
