@@ -33,6 +33,24 @@ public class ProductList {
         return (position + 1);
     }
 
+    Product deleteList(int p) {
+        if (isListEmpty()) {
+            System.out.println("Attempt to delete an entry from an empty list");
+        }
+        else if (p < 0 || p > (listSize())) {
+            System.out.println("attempt to delete a position not in the list");
+        }
+        else {
+            Product element = listEntry[p];
+            for (int i = p; i < (listSize()-1) ; i++) {
+                listEntry[i] = listEntry[i+1];
+            }
+            position--;
+            return element;
+        }
+        return null;
+    }
+
     public void traverse(){
         if(isListEmpty()){
             System.out.println("List is full.Can't traverse");
