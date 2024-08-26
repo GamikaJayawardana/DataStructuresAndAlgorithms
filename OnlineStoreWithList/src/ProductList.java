@@ -29,14 +29,32 @@ public class ProductList {
         }
     }
 
-    public int ListSize() {
+    public int listSize() {
         return (position + 1);
     }
 
     public void traverse(){
         System.out.printf("%-20s %-20s %-20s %-20s %-20s %-20s\n","Product ID","Product Name","Category","Unite Price","Quantity Sold","Total Sales Amount");
-        for (int i = 0; i < ListSize(); i++) {
+        for (int i = 0; i < listSize(); i++) {
             System.out.printf("%-20s %-20s %-20s %-20s %-20s %-20s\n",listEntry[i].productTD,listEntry[i].productName,listEntry[i].category,listEntry[i].unitPrice,listEntry[i].quantitySold,listEntry[i].totalAmount);
         }
     }
+
+    void sort(){
+        for (int i = 0; i < listSize(); i++) {
+            int minIndex = i;
+            for (int j = i+1; j < listSize(); j++) {
+                if (listEntry[minIndex].totalAmount > listEntry[j].totalAmount) {
+                    minIndex = j;
+                }
+            }
+            double temp = listEntry[i].totalAmount;
+            listEntry[i].totalAmount = listEntry[minIndex].totalAmount;
+            listEntry[minIndex].totalAmount = temp;
+
+        }
+    }
+
+    
+
 }
