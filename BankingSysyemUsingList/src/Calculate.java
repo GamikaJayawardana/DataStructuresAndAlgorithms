@@ -14,7 +14,6 @@ public class Calculate {
 
         displayCustomerAbove(1000000);
 
-
     }
 
     private static void displayCustomerAbove(int above) {
@@ -35,6 +34,8 @@ public class Calculate {
         int no = scan.nextInt();
 
         list = new ListHeader(no);
+
+
 
         System.out.println("Enter Customer Details");
         System.out.println("__________________________\n");
