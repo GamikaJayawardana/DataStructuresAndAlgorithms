@@ -6,6 +6,10 @@ public class OnlineStore {
     public static void main(String[] args) {
         loaddata();
         list.traverse();
+        list.sort();
+        System.out.println();
+        System.out.println("Sorted sales details according to the sales amount");
+        list.traverse();
 
     }
 
