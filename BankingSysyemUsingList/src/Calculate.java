@@ -14,7 +14,6 @@ public class Calculate {
 
         displayCustomerAbove(1000000);
 
-
     }
 
     private static void displayCustomerAbove(int above) {
