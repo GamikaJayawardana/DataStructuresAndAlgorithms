@@ -12,7 +12,7 @@ public class Calculate {
         sortedlist.quick(list,0,list.maxSize-1);
         list.traverselList();
 
-        displayCustomerAbove(1000000);
+        displayCustomerAbove(100000);
 
     }
 
