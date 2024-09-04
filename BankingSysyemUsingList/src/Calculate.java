@@ -27,6 +27,8 @@ public class Calculate {
         }
     }
 
+
+
     private static void loaddata() {
 
         Scanner scan = new Scanner(System.in);

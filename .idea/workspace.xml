@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="589d6e69-21f0-4bb3-8eb9-fcbac11788e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Stack/src/Stack_int.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/src/Stack_int.java" afterDir="false" />
-    </list>
+    <list default="true" id="589d6e69-21f0-4bb3-8eb9-fcbac11788e8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "test",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gamik/Documents/GitHub/DataStructuresAndAlgorithms",
+    "last_opened_file_path": "C:/Users/gamik/Documents/GitHub/DataStructuresAndAlgorithms/BankingSysyemUsingList",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +45,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +64,7 @@
       <workItem from="1723878576603" duration="12243000" />
       <workItem from="1724053733939" duration="181000" />
       <workItem from="1724054806056" duration="694000" />
+      <workItem from="1725029794057" duration="209000" />
     </task>
     <servers />
   </component>
