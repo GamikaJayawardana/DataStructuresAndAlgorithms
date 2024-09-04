@@ -65,15 +65,15 @@ public class ProductList {
     }
 
     public Product retrive(int p) {
-            if (isListEmpty()) {
-                System.out.println("Attempt to retrive an entry from an empty list");
-            }
-            else if (p < 0 || p > (listSize())) {
-                System.out.println("attempt to retrive a position not in the list");
-            }
-            else {
-                return listEntry[p];
-            }
+        if (isListEmpty()) {
+            System.out.println("Attempt to retrive an entry from an empty list");
+        }
+        else if (p < 0 || p > (listSize())) {
+            System.out.println("attempt to retrive a position not in the list");
+        }
+        else {
+            return listEntry[p];
+        }
 
         return null;
     }
@@ -151,11 +151,11 @@ public class ProductList {
             int j = i;
 
             while (j > 0) {
-               if (listEntry[j].totalAmount < listEntry[j-1].totalAmount) {
-                   Product temp = listEntry[j];
-                   listEntry[j] = listEntry[j-1];
-                   listEntry[j-1] = temp;
-               }
+                if (listEntry[j].totalAmount < listEntry[j-1].totalAmount) {
+                    Product temp = listEntry[j];
+                    listEntry[j] = listEntry[j-1];
+                    listEntry[j-1] = temp;
+                }
                 j--;
             }
 
@@ -183,3 +183,4 @@ public class ProductList {
     }
 
 }
+www.github.com/GamikaJayawardana/a

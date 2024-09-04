@@ -33,6 +33,17 @@ public class OnlineStore {
             }
         }
         System.out.println("total electronics sales:" + sales);
+
+        double salesT = 0;
+        for (int i = 0; i < list.listSize(); i++) {
+                salesT = salesT + list.listEntry[i].totalAmount;
+        }
+
+
+        System.out.println("total  sales:" + salesT);
+        double percentage = sales*100/salesT;
+        System.out.println("Percentage of electronics:" + percentage);
+
     }
 
     private static void loaddata() {
